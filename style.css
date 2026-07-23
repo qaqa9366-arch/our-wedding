@@ -590,3 +590,65 @@ button,a{font:inherit}
 .title-with-rule .kicker{
   margin-left:0!important;
 }
+
+
+/* FINAL REQUESTED CHANGES ONLY */
+
+/* 1. Cover horses: fit fully on mobile, centered, no crop */
+.horses{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:visible;
+}
+.horses img{
+  display:block;
+  object-fit:contain;
+  object-position:center center;
+  margin:0 auto;
+}
+
+@media(max-width:700px){
+  .horses{
+    width:100%;
+    min-height:0;
+    height:auto;
+    margin:10px auto 8px;
+  }
+  .horses img{
+    width:min(78vw, 320px);
+    max-width:100%;
+    height:auto;
+  }
+}
+
+/* 2. Align all section titles to THE WEDDING DAY */
+.section-kicker{
+  width:100%;
+  max-width:620px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  margin-top:0!important;
+  margin-bottom:38px!important;
+  text-align:left!important;
+  align-self:auto!important;
+  transform:none!important;
+}
+
+@media(max-width:700px){
+  .section-kicker{
+    max-width:none;
+    margin-bottom:38px!important;
+  }
+}
+
+/* 3. Second page photo in black and white */
+.photo-frame img{
+  filter:grayscale(1) contrast(1.02) brightness(1.01)!important;
+}
+
+/* 4. Use RGB color handling for all image assets */
+img{
+  color-interpolation:sRGB;
+  image-rendering:auto;
+}
