@@ -1,15 +1,13 @@
 # Yujin & Kihuun Wedding Website
 
-사진과 아날로그 LP 음악 버튼이 포함된 GitHub Pages 업로드용 프로젝트입니다.
+모바일 사진 페이지 비율을 수정한 GitHub Pages 업로드용 프로젝트입니다.
 
-## 배포 방법
-1. ZIP 압축을 풉니다.
-2. GitHub에서 새 Public repository를 만듭니다.
-3. 압축을 푼 폴더 안 파일 전체를 저장소 최상단에 업로드합니다.
-4. Settings → Pages로 이동합니다.
-5. Deploy from a branch를 선택합니다.
-6. Branch는 main, Folder는 /root로 설정합니다.
-7. 저장 후 생성된 주소를 확인합니다.
+## 이번 수정
+- 모바일 사진 페이지를 가로 3:2 비율로 변경
+- 원본 사진 전체가 보이도록 잘림 방지
+- 태블릿 화면에서도 가로 사진 비율 유지
+- 기존 LP 음악 버튼과 디자인 유지
 
-## 음악 교체
-새 MP3 파일 이름을 `ethereal_iceland.mp3`로 바꾸고 기존 음악 파일을 덮어쓰면 됩니다.
+## GitHub 업데이트
+ZIP 압축을 푼 뒤 내부 파일 전체를 기존 저장소에 업로드하고,
+같은 이름의 파일은 덮어쓰면 됩니다.
