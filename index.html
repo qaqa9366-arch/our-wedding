@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#aeb2c7">
+  <meta name="description" content="박기훈과 한유진의 결혼식에 초대합니다.">
+  <title>Yujin & Kihuun · 2026.09.05</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:wght@400;700&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <svg class="defs" aria-hidden="true">
+    <filter id="ink">
+      <feTurbulence type="fractalNoise" baseFrequency=".018 .09" numOctaves="3" seed="17" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.05"/>
+      <feGaussianBlur stdDeviation=".08"/>
+    </filter>
+  </svg>
+
+  <div class="screen-grain"></div>
+
+  <button class="record-player" id="soundBtn" type="button" aria-label="음악 재생 또는 정지">
+    <span class="record" aria-hidden="true">
+      <i class="record-groove groove-one"></i>
+      <i class="record-groove groove-two"></i>
+      <i class="record-label">Y·K</i>
+      <i class="record-hole"></i>
+    </span>
+    <span class="tonearm" aria-hidden="true"></span>
+    <small>PLAY</small>
+  </button>
+
+  <main class="book">
+    <section class="page page-lavender cover visible">
+      <div class="paper-texture"></div>
+      <div class="mark mark-top"></div>
+
+      <div class="names">
+        <h1>Yujin</h1>
+        <b>&amp;</b>
+        <h1>Kihuun</h1>
+      </div>
+
+      <figure class="horses">
+        <img src="./horses-silkscreen.png" alt="아이슬란드 말 두 마리">
+      </figure>
+
+      <div class="cover-meta">
+        <strong>2026 · 09 · 05 · SAT</strong>
+        <span>신부 한유진 · 신랑 박기훈</span>
+      </div>
+      <small class="folio">01</small>
+    </section>
+
+    <section class="page page-lavender photo-page">
+      <div class="paper-texture"></div>
+      <div class="mark mark-side"></div>
+
+      <figure class="photo-frame">
+        <img src="./couple-photo.jpg" alt="박기훈과 한유진의 사진"
+             onerror="this.hidden=true;this.nextElementSibling.hidden=false;">
+        <div class="photo-placeholder" hidden>
+          <span>COUPLE PHOTO</span>
+          <small>couple-photo.jpg</small>
+        </div>
+      </figure>
+      <small class="folio">02</small>
+    </section>
+
+    <section class="page page-mint date-page">
+      <div class="paper-texture"></div>
+      <div class="mark mark-bottom"></div>
+
+      <p class="kicker">THE WEDDING DAY</p>
+
+      <div class="date-display">
+        <span>09</span><i>/</i><span>05</span><small>2026</small>
+      </div>
+
+      <div class="calendar">
+        <div class="week">
+          <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+        </div>
+        <div class="days">
+          <i></i><i></i><span>1</span><span>2</span><span>3</span><span>4</span><span class="selected">5</span>
+          <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+          <span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+          <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+          <span>27</span><span>28</span><span>29</span><span>30</span>
+        </div>
+      </div>
+
+      <div class="date-copy">
+        <strong>Saturday, September 5</strong>
+        <span>1:30 PM</span>
+        <p>2026년 9월 5일 토요일 오후 1시 30분</p>
+      </div>
+      <small class="folio">03</small>
+    </section>
+
+    <section class="page page-mint venue-page">
+      <div class="paper-texture"></div>
+      <div class="mark mark-top"></div>
+
+      <p class="kicker">THE PLACE</p>
+
+      <div class="venue">
+        <h2>100주년기념관<br>웨딩홀 네오트로</h2>
+        <p>서울 종로구 대학로3길 29</p>
+
+        <div class="route">
+          <span>100주년기념관</span>
+          <strong>웨딩홀 네오트로</strong>
+          <small>SEOUL · JONGNO</small>
+        </div>
+
+        <a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EB%8C%80%ED%95%99%EB%A1%9C3%EA%B8%B8%2029%20100%EC%A3%BC%EB%85%84%EA%B8%B0%EB%85%90%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80%20%EB%84%A4%EC%98%A4%ED%8A%B8%EB%A1%9C" target="_blank" rel="noreferrer">
+          네이버지도에서 보기 →
+        </a>
+      </div>
+      <small class="folio">04</small>
+    </section>
+
+    <section class="page page-mint family-page">
+      <div class="paper-texture"></div>
+      <div class="mark mark-side"></div>
+
+      <p class="kicker">FAMILY</p>
+      <h2>양가 가족</h2>
+
+      <div class="family-grid">
+        <div>
+          <small>신랑측</small>
+          <p><span>아버지</span><strong>박중섭</strong></p>
+          <p><span>어머니</span><strong>이영옥</strong></p>
+        </div>
+        <div>
+          <small>신부측</small>
+          <p><span>아버지</span><strong>한정권</strong></p>
+          <p><span>어머니</span><strong>김경희</strong></p>
+        </div>
+      </div>
+
+      <p class="family-note">귀한 발걸음으로 축복해 주시면<br>더없는 기쁨이겠습니다.</p>
+      <small class="folio">05</small>
+    </section>
+
+    <section class="page page-mint account-page">
+      <div class="paper-texture"></div>
+      <div class="mark mark-bottom"></div>
+
+      <p class="kicker">ACCOUNT</p>
+      <h2>마음 전하실 곳</h2>
+      <p class="account-note">따뜻한 마음 감사히 받겠습니다.</p>
+
+      <div class="account-list">
+        <article>
+          <div>
+            <small>신랑 박기훈</small>
+            <strong>하나은행 77791020962807</strong>
+          </div>
+          <button type="button" data-copy="77791020962807">복사</button>
+        </article>
+
+        <article>
+          <div>
+            <small>신부 한유진</small>
+            <strong>국민은행 51000101106335</strong>
+          </div>
+          <button type="button" data-copy="51000101106335">복사</button>
+        </article>
+      </div>
+
+      <p id="copyNotice" class="copy-notice" aria-live="polite"></p>
+      <small class="folio">06</small>
+    </section>
+
+    <section class="page page-lavender ending-page">
+      <div class="paper-texture"></div>
+      <div class="mark mark-top"></div>
+
+      <p>저희의 새로운 시작을<br>함께 축복해 주세요.</p>
+      <h2>Yujin <b>&amp;</b> Kihuun</h2>
+      <span>2026 · 09 · 05</span>
+      <small class="folio">07</small>
+    </section>
+  </main>
+
+  <audio id="bgm" loop preload="metadata">
+    <source src="./ethereal_iceland.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="./script.js"></script>
+</body>
+</html>
