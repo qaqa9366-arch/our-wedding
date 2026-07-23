@@ -11,3 +11,9 @@
 ## GitHub 업데이트
 ZIP 압축을 푼 뒤 내부 파일 전체를 기존 저장소에 업로드하고,
 같은 이름의 파일은 덮어쓰면 됩니다.
+
+## 2026-07-23 horse width deployment fix
+- CSS file renamed to `style-fullwidth-v2.css` to avoid stale/failed `style.css` replacement.
+- `index.html` now loads the new filename with a version query.
+- Upload every file from this ZIP to the repository root.
+- Delete the old `style.css` after upload if desired; the website no longer references it.
