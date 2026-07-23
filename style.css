@@ -652,3 +652,36 @@ img{
   color-interpolation:sRGB;
   image-rendering:auto;
 }
+
+/* FINAL COVER HORSE WIDTH ADJUSTMENT
+   Keep the original horses-silkscreen.png and fill the cover horizontally. */
+.horses{
+  width:100vw;
+  max-width:none;
+  margin:6px 0 4px 50%;
+  transform:translateX(-50%);
+  min-height:0;
+  overflow:hidden;
+}
+.horses img{
+  width:100%;
+  max-width:none;
+  height:auto;
+  margin:0;
+  object-fit:contain;
+  object-position:center center;
+}
+
+@media(max-width:700px){
+  .horses{
+    width:100vw;
+    height:auto;
+    margin:8px 0 6px 50%;
+    transform:translateX(-50%);
+  }
+  .horses img{
+    width:100%;
+    max-width:none;
+    height:auto;
+  }
+}
